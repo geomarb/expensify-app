@@ -1,7 +1,7 @@
 import moment from 'moment'
 // Get visible expenses
 //O que esse cara faz:
-//recebe um array com todos os tados e os filtros e ordenações a serem aplicados
+//recebe um array com todos os estados e os filtros e ordenações a serem aplicados
 //primeiro filtra os dados do array e depois ordena 
 export default (expenses, { text, sortBy, startDate, endDate }) => {
     return expenses.filter(expense => {
