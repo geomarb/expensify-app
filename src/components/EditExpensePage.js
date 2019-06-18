@@ -4,7 +4,7 @@ import ExpenseForm from './ExpenseForm'
 import { startEditExpense, startRemoveExpense } from '../actions/expenses'
 
 export class EditExpensePage extends React.Component {
-    onSubmit = (expense) => {
+    onSubmit = expense => {
         this.props.startEditExpense(this.props.expense.id, expense)
         this.props.history.push('/')
     }
@@ -32,10 +32,7 @@ const mapStateToProps = (state, props) => ({
 
 const mapDispatchToProps = (dispatch, props) => ({
     startEditExpense: (id, expense) => dispatch(startEditExpense(id, expense)),
-    startRemoveExpense: (id) => {
-        console.log('component/EditExpensePage.js', 'id:', id)
-        return dispatch(startRemoveExpense(id))
-    }
+    startRemoveExpense: (id) => dispatch(startRemoveExpense(id))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditExpensePage)
