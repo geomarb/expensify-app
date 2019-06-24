@@ -2,7 +2,8 @@
 
 exports[`should render NotFoundPage correctly 1`] = `
 <div>
-  404 - 
+  404 -
+   
   <Link
     to="/"
   >

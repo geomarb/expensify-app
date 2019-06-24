@@ -5,10 +5,10 @@ import ExpensesSummary from './ExpensesSummary';
 
 const ExpenseDashboardPage = () => (
   <div>
-      <ExpensesSummary />
-      <ExpenseListFilters />
-      <ExpenseList />
-    </div>
+    <ExpensesSummary />
+    <ExpenseListFilters />
+    <ExpenseList />
+  </div>
 );
 
 export default ExpenseDashboardPage;

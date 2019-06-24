@@ -25,14 +25,14 @@
 // console.log(publisherName);
 
 
-const address = ['1299 S Juniper Street', 'Philadelphia', 'Pennsylvania', '19147']
+const address = ['1299 S Juniper Street', 'Philadelphia', 'Pennsylvania', '19147'];
 
-const [, , state] = address
+const [, , state] = address;
 
-console.log(state)
+console.log(state);
 
-const item = ['Coffee (hot)', '$2.00', '$2.50', '$2.75']
+const item = ['Coffee (hot)', '$2.00', '$2.50', '$2.75'];
 
-const [description, small, medium, large] = item
+const [description, small, medium, large] = item;
 
 console.log(description, medium);
